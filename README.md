@@ -113,7 +113,7 @@ int main(int argc, char ** argv)
 ### 我们提出一个问题：如果一张图里有白雪公主，我们如何把白雪公主拿出来并且不破坏背景图？
 我们应了解傅里叶变化                                                       
 ![image](https://github.com/artimisgood/-Android-/blob/master/图片5.png)                     
-![image](https://github.com/artimisgood/-Android-/blob/master/图片6.png)                      
+![image](https://github.com/artimisgood/-Android-/blob/master/6.png)                      
 - 如图，进行傅里叶级数计算后，我们从空间域视角转换为频率域视角。其实，白雪公主可能就是其中的一条，我们只要从频率域视角中选出来并且剔除掉，就可能实现问题中的效果。 
 
 ---
