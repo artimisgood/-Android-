@@ -93,15 +93,9 @@ int main(int argc, char ** argv)
 ## 我们明确几点概念：
 #### 1.图像
 计算机产生的图像实际上是由三个矩阵产生的。也可以看作一组波。
-
-
-
 #### 2.取样和量化
 我们可以将图像块状分割，从每块取样。采样点越少，图片越模糊。                                        
 ![image](https://github.com/artimisgood/-Android-/blob/master/1.jpg)
-
-
-
 #### 3.灰度级
 离散化后的像素值用一个字节表示（8位）。颜色模式RGB每个字母所代表的程度都用一个字节表示。也就是说一共有256*256*256种颜色。
 ![image](https://github.com/artimisgood/-Android-/blob/master/2.jpg)
@@ -113,8 +107,6 @@ int main(int argc, char ** argv)
 ![image](https://github.com/artimisgood/-Android-/blob/master/图片3.png)
 其本质就是把周期信号波转化为无限多个离散的正弦波。                      
 ![image](https://github.com/artimisgood/-Android-/blob/master/图片4.png)
-
-
 
 
 ---
@@ -131,8 +123,8 @@ int main(int argc, char ** argv)
  * 以上铅笔图中，有很多杂点，我们称之为噪点。平滑化滤波可以去噪，也就是去除噪点。噪点的像素值与周围的像素值非常不同，而去噪就是让其像素值变得与周围相同。锐化恰恰相反，他能让图像的边界变得更加明显。
 #### 接下来我们必须熟悉一下图像求导和图像微分的知识，才能更好的编写代码
 我们先类比连续函数求导：                                
-![image](https://github.com/artimisgood/-Android-/blob/master/图片7.png)
-这是图像求导：我们可以使用有限差分表示图像的导数或者偏导数（离散数学没学到所以不是很理解）。
 ![image](https://github.com/artimisgood/-Android-/blob/master/图片8.png)
+这是图像求导：我们可以使用有限差分表示图像的导数或者偏导数（离散数学没学到所以不是很理解）。
+![image](https://github.com/artimisgood/-Android-/blob/master/图片9.png)
 这里使用差分近似的。
 
