@@ -95,3 +95,4 @@ int main(int argc, char ** argv)
 计算机产生的图像实际上是由三个矩阵产生的。也可以看作一组波。
 #### 2.2.取样和量化
 我们可以将图像块状分割，从每块取样。采样点越少，图片越模糊。
+！[1](https://github.com/artimisgood/-Android-/blob/master/1.jpg)
